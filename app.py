@@ -9,6 +9,6 @@ def hello_world():
     return "<p>Hello, World!</p>"
 
 
-@app.route("/dynamic string/<name>")
+@app.route("/dynamic_string/<name>")
 def dyn_string(name):
     return f"<h1>The saved string is {escape(name)}</h1>"
