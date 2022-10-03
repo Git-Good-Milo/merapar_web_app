@@ -4,8 +4,8 @@ After=network.target
 [Service]
 User=ec2-user
 Group=www-data
-WorkingDirectory=/home/ubuntu/helloworld
-ExecStart=/home/ubuntu/helloworld/venv/bin/gunicorn -b localhost:8000 app:app
+WorkingDirectory=/home/ec2-user/merapar_web_app
+ExecStart=/home/ec2-user/merapar_web_app/venv/bin/gunicorn -b localhost:8000 app:app
 Restart=always
 [Install]
 WantedBy=multi-user.target
